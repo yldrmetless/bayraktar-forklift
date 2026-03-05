@@ -16,8 +16,8 @@ const contactCards = [
         title: "Adresimiz",
         content: (
             <>
-                Kadırga Cd. No:45<br />
-                Kadıköy / İstanbul
+                Ferhatpaşa Mahallesi 9. Sokak No 25/1 <br />
+                Ataşehir İSTANBUL
             </>
         ),
         buttonLabel: "HARİTADA AÇ",
@@ -29,11 +29,11 @@ const contactCards = [
         content: (
             <>
                 Haftanın her günü hizmet.<br />
-                <span className="font-bold text-[#1A1D23] text-lg mt-1 block">0540 357 11 11</span>
+                <span className="font-bold text-[#1A1D23] text-lg mt-1 block">0538 514 74 74</span>
             </>
         ),
         buttonLabel: "HEMEN ARA",
-        action: "tel:+905403571111"
+        action: "tel:+905385147474"
     },
     {
         icon: Mail,
@@ -41,11 +41,11 @@ const contactCards = [
         content: (
             <>
                 Teklif talepleriniz için:<br />
-                <span className="font-bold text-[#1A1D23] mt-1 block">info@ozmaksan.com</span>
+                <span className="font-bold text-[#1A1D23] mt-1 block">info@bayraktarforklift.com</span>
             </>
         ),
         buttonLabel: "E-POSTA GÖNDER",
-        action: "mailto:info@ozmaksan.com"
+        action: "mailto:info@bayraktarforklift.com"
     }
 ];
 
@@ -70,7 +70,7 @@ export default function Iletisim() {
             <main className="flex-1 overflow-hidden">
                 {/* Floating WhatsApp Button */}
                 <a
-                    href="https://wa.me/905403571111"
+                    href="https://wa.me/905385147474"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="fixed bottom-8 right-8 z-50 bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center cursor-pointer animate-pulse"
