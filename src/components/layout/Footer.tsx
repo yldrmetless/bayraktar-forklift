@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { MapPin, Phone, Mail, Facebook, Instagram, Share2 } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 export function Footer() {
     return (
         <footer className="bg-[#111620] pt-20 pb-10 text-gray-300">

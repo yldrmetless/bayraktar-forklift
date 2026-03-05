@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import Image from 'next/image';
 import {
     Hammer,
     Warehouse,
@@ -138,10 +139,11 @@ export default function Hizmetlerimiz() {
                                 transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                             >
                                 <div className="relative aspect-square lg:aspect-[4/5] w-full rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)] ring-1 ring-border/10 bg-gray-100">
-                                    <img
+                                    <Image
                                         src="https://images.unsplash.com/photo-1586528116311-ad8ed7e50def?auto=format&fit=crop&q=80&w=1200"
                                         alt="Forklift Services"
-                                        className="w-full h-full object-cover"
+                                        fill
+                                        className="object-cover"
                                     />
                                 </div>
                             </motion.div>

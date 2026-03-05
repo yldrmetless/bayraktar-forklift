@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import Image from 'next/image';
 import { CheckCircle2, MapPin, MessageCircle } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -106,10 +107,11 @@ export default function Hakkimizda() {
                                 transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                             >
                                 <div className="relative w-full h-full aspect-square lg:aspect-auto rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)] ring-1 ring-border/10">
-                                    <img
+                                    <Image
                                         src="/forklift2.png"
                                         alt="Warehouse Exterior"
-                                        className="w-full h-full object-cover"
+                                        fill
+                                        className="object-cover"
                                     />
                                 </div>
                             </motion.div>

@@ -135,7 +135,7 @@ export default function Filomuz() {
                                 İstanbul Genelinde Kiralık Forklift Çözümleri
                             </h1>
                             <p className="text-gray-500 text-lg leading-relaxed max-w-2xl mx-auto">
-                                Tüm bölgelerde 7/24 acil, operatörlü ve güvenli kiralama hizmeti sunuyoruz. İstanbul'un her iki yakasında, projenizin büyüklüğü ne olursa olsun yanınızdayız.
+                                Tüm bölgelerde 7/24 acil, operatörlü ve güvenli kiralama hizmeti sunuyoruz. İstanbul&apos;un her iki yakasında, projenizin büyüklüğü ne olursa olsun yanınızdayız.
                             </p>
                         </motion.div>
                     </div>
