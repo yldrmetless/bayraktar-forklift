@@ -11,7 +11,6 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Bayraktar Forklift Kiralama",
   description: "Bayraktar: Forklift, şantiye, depo ve sanayi alanları için hızlı ve güvenilir forklift kiralama hizmeti.",
-  icons: { icon: '/favicon.png', apple: '/favicon.png' }
 };
 
 import { FloatingWhatsApp } from '@/components/FloatingWhatsApp';
@@ -23,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href={`/favicon.png?v=${Date.now()}`} />
+      </head>
       <body className={`${poppins.variable} font-sans antialiased`}>
         {children}
         <FloatingWhatsApp />

@@ -9,14 +9,12 @@ import Link from 'next/link';
 export function Hero() {
     return (
         <section className="relative w-full h-[600px] md:h-[700px] lg:h-[800px] flex items-center">
-            {/* Background Image & Overlay */}
             <div className="absolute inset-0 z-0">
                 <img
                     src="/hero.png"
                     alt="Industrial Warehouse"
                     className="w-full h-full object-cover"
                 />
-                {/* Dark overlay with industrial tone */}
                 <div className="absolute inset-0 bg-slate-900/70" />
             </div>
 
