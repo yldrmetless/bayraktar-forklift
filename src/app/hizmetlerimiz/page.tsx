@@ -16,7 +16,6 @@ import {
     ShieldCheck,
     UserCog,
     ClipboardCheck,
-    MessageCircle,
     Phone
 } from 'lucide-react';
 import { Card } from '@/components/ui/card';
