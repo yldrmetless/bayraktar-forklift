@@ -8,7 +8,7 @@ import { Users, ShieldCheck, Clock, UserCheck } from 'lucide-react';
 const features = [
     {
         title: "Profesyonel Kadro",
-        description: "Alanında deneyimli operatörlerimiz ile forklift ve manitou kiralama hizmetini güvenli ve sorunsuz şekilde sunuyoruz.",
+        description: "Alanında deneyimli operatörlerimiz ile forklift kiralama hizmetini güvenli ve sorunsuz şekilde sunuyoruz.",
         icon: Users,
         theme: "dark"
     },
@@ -20,7 +20,7 @@ const features = [
     },
     {
         title: "7/24 Hizmet",
-        description: "İstanbul genelinde forklift ve manitou kiralama ihtiyaçlarınıza hızlı çözümler sunuyoruz.",
+        description: "İstanbul genelinde forklift kiralama ihtiyaçlarınıza hızlı çözümler sunuyoruz.",
         icon: Clock,
         theme: "primary"
     },
@@ -111,33 +111,6 @@ export function Features() {
                             </motion.div>
                         );
                     })}
-                </motion.div>
-
-                {/* Machine Park Info Block */}
-                <motion.div
-                    className="bg-[#F8F9FA] rounded-[1.5rem] p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 border border-border/50 shadow-sm"
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.3 }}
-                >
-                    <div className="flex-1">
-                        <h3 className="text-2xl font-bold text-secondary mb-3">Geniş Makine Parkuru</h3>
-                        <p className="text-muted-foreground">
-                            Bayraktar Forklift Kiralama olarak her türlü yükseklik ve ağırlık kapasitesine uygun, bakımları düzenli yapılmış en yeni model iş makineleriyle hizmetinizdeyiz.
-                        </p>
-                    </div>
-
-                    <div className="flex items-center gap-4">
-                        <div className="bg-white px-6 py-4 rounded-2xl shadow-sm border border-border/30 text-center min-w-[120px]">
-                            <div className="text-3xl font-black text-primary">100+</div>
-                            <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mt-1">MAKİNE</div>
-                        </div>
-                        <div className="bg-white px-6 py-4 rounded-2xl shadow-sm border border-border/30 text-center min-w-[120px]">
-                            <div className="text-3xl font-black text-primary">20Y+</div>
-                            <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mt-1">TECRÜBE</div>
-                        </div>
-                    </div>
                 </motion.div>
             </div>
         </section>

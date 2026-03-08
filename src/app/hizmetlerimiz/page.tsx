@@ -119,13 +119,13 @@ export default function Hizmetlerimiz() {
 
                                 <div className="space-y-5 text-gray-500 leading-relaxed text-[15px] md:text-base">
                                     <p>
-                                        Bayraktar Forklift, şantiyeler, depolar, fabrikalar ve sanayi tesisleri için güvenilir ve hızlı forklift kiralama hizmeti sunmaktadır. Güçlü makine parkurumuz ve saha tecrübemiz sayesinde her ölçekte projeye profesyonel çözümler sağlıyoruz.
+                                        <strong>Bayraktar Forklift</strong>, <strong>Ataşehir forklift kiralama</strong> başta olmak üzere İstanbul Anadolu Yakası genelinde hızlı ve güvenilir forklift kiralama hizmeti sunmaktadır. Şantiyeler, depolar, fabrikalar ve sanayi tesisleri için profesyonel forklift çözümleri sağlıyoruz.
                                     </p>
                                     <p>
-                                        Forklift kiralama hizmetimiz kapsamında makinelerimiz bakımlı, güvenli ve çalışmaya hazır durumda teslim edilir. İş sağlığı ve güvenliği kurallarına uygun ekipmanlarımız ve deneyimli operatörlerimiz ile sahada sorunsuz hizmet veriyoruz.
+                                        Forklift kiralama hizmetimiz kapsamında tüm makinelerimiz bakımlı, güvenli ve çalışmaya hazır şekilde teslim edilir. Deneyimli operatör kadromuz ile yük indirme, taşıma ve istifleme işlemlerinde güvenli ve sorunsuz hizmet sunmaktayız.
                                     </p>
                                     <p>
-                                        İhtiyacınıza uygun günlük, haftalık veya aylık forklift kiralama seçenekleri ile projelerinize ekonomik ve pratik çözümler sunuyoruz.
+                                        Günlük, haftalık ve aylık forklift kiralama seçenekleri ile Ataşehir ve çevresindeki işletmelere ekonomik ve pratik çözümler sağlıyoruz. <strong>7/24 forklift kiralama</strong> hizmetimiz ile acil işlerde de hızlı destek sunuyoruz.
                                     </p>
                                 </div>
                             </motion.div>
@@ -140,7 +140,7 @@ export default function Hizmetlerimiz() {
                             >
                                 <div className="relative aspect-square lg:aspect-[4/5] w-full rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)] ring-1 ring-border/10 bg-gray-100">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1586528116311-ad8ed7e50def?auto=format&fit=crop&q=80&w=1200"
+                                        src="/forklift1.png"
                                         alt="Forklift Services"
                                         fill
                                         className="object-cover"
@@ -294,7 +294,7 @@ export default function Hizmetlerimiz() {
                                     href="https://wa.me/905385147474?text=Merhaba%20forklift%20kiralamak%20istiyorum"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-full sm:w-[240px] h-[56px] bg-white text-[#FF6600] rounded-xl font-bold flex items-center justify-center gap-3 shadow-lg hover:bg-gray-50 transition-colors"
+                                    className="w-full sm:w-[240px] h-[56px] bg-white text-[#38b000] rounded-xl font-bold flex items-center justify-center gap-3 shadow-lg hover:bg-gray-50 transition-colors"
                                 >
                                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg" className="text-[#25D366]"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.4-11.3 2.5-2.4 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.6 5.5-9.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
                                     WhatsApp Destek

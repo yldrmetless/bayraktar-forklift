@@ -1,7 +1,9 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Hero } from '@/components/sections/Hero';
+import { ServiceHighlights } from '@/components/sections/ServiceHighlights';
 import { Features } from '@/components/sections/Features';
-import { Technical } from '@/components/sections/Technical';
+import { GalleryPreview } from '@/components/sections/GalleryPreview';
+import { ContactInfoCards } from '@/components/sections/ContactInfoCards';
 import { CTA } from '@/components/sections/CTA';
 import { Footer } from '@/components/layout/Footer';
 
@@ -11,8 +13,10 @@ export default function Home() {
       <Navbar />
       <main className="flex-1 overflow-hidden">
         <Hero />
+        <ServiceHighlights />
         <Features />
-        <Technical />
+        <GalleryPreview />
+        <ContactInfoCards />
         <CTA />
       </main>
       <Footer />

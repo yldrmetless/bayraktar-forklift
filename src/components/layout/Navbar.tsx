@@ -29,28 +29,34 @@ export function Navbar() {
         { name: 'Hizmetlerimiz', href: '/hizmetlerimiz' },
         { name: 'Filomuz', href: '/filomuz' },
         { name: 'Hakkımızda', href: '/hakkimizda' },
+        { name: 'Galeri', href: '/galeri' },
         { name: 'İletişim', href: '/iletisim' }
     ];
 
     return (
         <nav className="sticky top-0 z-50 w-full bg-white border-b border-border/40 shadow-sm">
-            <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+            <div className="container mx-auto px-4 h-20 flex items-center justify-between lg:grid lg:grid-cols-[1fr_auto_1fr]">
 
                 {/* Logo */}
-                <div className="flex items-center gap-1 z-50">
-                    <Link href="/" className="flex items-center relative h-8 sm:h-10 w-48 sm:w-64" onClick={() => setIsOpen(false)}>
-                        <Image
-                            src="/logo.png"
-                            alt="Bayraktar Forklift Logo"
-                            fill
-                            className="object-contain object-left"
-                            priority
-                        />
+                <div className="flex items-center gap-1 z-50 lg:justify-self-start">
+                    <Link
+                        href="/"
+                        className="flex items-center"
+                        onClick={() => setIsOpen(false)}
+                    >
+                        <div className="relative h-[55px] w-[260px] sm:h-[75px] sm:w-[320px]">
+                            <Image
+                                src="/logo.png"
+                                alt="Bayraktar Forklift Logo"
+                                fill
+                                className="object-contain object-left"
+                                priority
+                            />
+                        </div>
                     </Link>
                 </div>
-
                 {/* Desktop Nav Links */}
-                <div className="hidden lg:flex gap-8 items-center">
+                <div className="hidden lg:flex items-center gap-8 lg:gap-12 lg:justify-self-center">
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}
@@ -66,10 +72,10 @@ export function Navbar() {
                 </div>
 
                 {/* Action Buttons & Mobile Toggle */}
-                <div className="flex items-center gap-3 z-50">
+                <div className="flex items-center gap-3 z-50 lg:justify-self-end">
                     {/* Desktop Teklif Al Button */}
                     <Link href="https://wa.me/905385147474?text=Merhaba%20forklift%20kiralamak%20istiyorum" target="_blank" rel="noopener noreferrer" className="hidden sm:block">
-                        <Button className="cursor-pointer bg-[#FF6600] hover:bg-[#E65C00] text-white font-bold px-6 py-2 rounded-lg transition-all shadow-md h-auto">
+                        <Button className="cursor-pointer bg-[#008000] hover:bg-[#38b000] text-white font-bold px-6 py-2 rounded-lg transition-all shadow-md h-auto">
                             Teklif Al
                         </Button>
                     </Link>
@@ -131,7 +137,7 @@ export function Navbar() {
                                 <div className="mt-8 pt-8 border-t border-border/50 w-full">
                                     <p className="text-sm text-gray-500 mb-4 px-2 font-medium">Hızlı İletişim</p>
                                     <Link href="https://wa.me/905385147474?text=Merhaba%20forklift%20kiralamak%20istiyorum" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="block w-full">
-                                        <Button className="w-full bg-[#FF6600] hover:bg-[#E65C00] text-white font-bold px-6 py-2 rounded-lg transition-all shadow-md flex items-center justify-center text-lg h-14">
+                                        <Button className="w-full bg-[#008000] hover:bg-[#008000] text-white font-bold px-6 py-2 rounded-lg transition-all shadow-md flex items-center justify-center text-lg h-14">
                                             Teklif Al
                                         </Button>
                                     </Link>

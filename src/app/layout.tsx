@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 };
 
 import { FloatingWhatsApp } from '@/components/FloatingWhatsApp';
+import { FloatingCallButton } from '@/components/FloatingCallButton';
 
 export default function RootLayout({
   children,
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} font-sans antialiased`}>
         {children}
         <FloatingWhatsApp />
+        <FloatingCallButton />
       </body>
     </html>
   );

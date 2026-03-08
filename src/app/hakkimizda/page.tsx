@@ -45,17 +45,7 @@ export default function Hakkimizda() {
 
             <main className="flex-1 overflow-hidden">
 
-                {/* Floating WhatsApp Button */}
-                <a
-                    href="https://wa.me/905403571111"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="fixed bottom-8 right-8 z-50 bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center cursor-pointer"
-                >
-                    <MessageCircle className="w-8 h-8" fill="currentColor" />
-                </a>
 
-                {/* Hero Intro Section */}
                 <section className="py-20 lg:py-32 bg-white">
                     <div className="container mx-auto px-4 max-w-6xl">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -79,7 +69,7 @@ export default function Hakkimizda() {
 
                                 <div className="space-y-4 text-lg text-gray-500 leading-relaxed">
                                     <p>
-                                        Bayraktar Forklift ve Manitou Kiralama olarak, forklift ve manitou kiralama alanında profesyonel hizmet sunuyoruz. Şantiyeler, depolar ve endüstriyel projeler için bakımlı iş makinelerimiz ve deneyimli ekibimizle güvenilir çözümler sağlıyoruz.
+                                        Bayraktar Forklift olarak, forklift kiralama alanında profesyonel hizmet sunuyoruz. Şantiyeler, depolar ve endüstriyel projeler için bakımlı iş makinelerimiz ve deneyimli ekibimizle güvenilir çözümler sağlıyoruz.
                                     </p>
                                     <p>
                                         Amacımız, müşterilerilerimizin iş süreçlerini aksatmadan, en yüksek verimlilikle operasyonlarını sürdürmelerine destek olmaktır. İhtiyaçlara özel kısa ve uzun dönem kiralama seçeneklerimizle iş yükünüzü hafifletiyoruz.

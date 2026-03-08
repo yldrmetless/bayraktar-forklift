@@ -7,7 +7,7 @@ import * as motion from 'framer-motion/client';
 
 export const metadata: Metadata = {
     title: 'İletişim - Bayraktar Forklift',
-    description: 'Bayraktar Forklift iletişim sayfası. Bize ulaşın, profesyonel forklift ve manitou kiralama hizmetlerimiz hakkında bilgi alın.',
+    description: 'Bayraktar Forklift iletişim sayfası. Bize ulaşın, profesyonel forklift kiralama hizmetlerimiz hakkında bilgi alın.',
 };
 
 const contactCards = [
@@ -68,26 +68,8 @@ export default function Iletisim() {
             <Navbar />
 
             <main className="flex-1 overflow-hidden">
-                {/* Floating WhatsApp Button */}
-                <a
-                    href="https://wa.me/905385147474"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="fixed bottom-8 right-8 z-50 bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center cursor-pointer animate-pulse"
-                >
-                    <MessageCircle className="w-8 h-8" fill="currentColor" />
-                </a>
 
-                {/* Google Map Header */}
-                <div className="w-full h-[450px] relative">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.8310411040347!2d29.171061876839207!3d40.98518042084555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacf652dc0c5d1%3A0x31d8884270dc8ba1!2zRmVyaGF0cGHFn2EsIDkuIFNrLiBObzoyNSBEOjEsIDM0ODg4IEF0YcWfZWhpci_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1772666715717!5m2!1str!2str"
-                        className="w-full h-full border-0 grayscale-[0.2] contrast-[1.1]"
-                        allowFullScreen
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                    />
-                </div>
+
 
                 {/* Form & Cards Container */}
                 <div className="py-20 lg:py-24">
@@ -143,6 +125,18 @@ export default function Iletisim() {
                         </motion.div>
                     </div>
                 </div>
+
+                {/* Google Map Header */}
+                <div className="w-full h-[450px] relative">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.8310411040347!2d29.171061876839207!3d40.98518042084555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacf652dc0c5d1%3A0x31d8884270dc8ba1!2zRmVyaGF0cGHFn2EsIDkuIFNrLiBObzoyNSBEOjEsIDM0ODg4IEF0YcWfZWhpci_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1772666715717!5m2!1str!2str"
+                        className="w-full h-full border-0 grayscale-[0.2] contrast-[1.1]"
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    />
+                </div>
+
             </main>
 
             <Footer />

@@ -54,7 +54,7 @@
   --card-foreground: #1A1D23;
   --popover: #ffffff;
   --popover-foreground: #1A1D23;
-  --primary: #FF6B00;
+  --primary: #008000;
   --primary-foreground: #ffffff;
   --secondary: #1A1D23;
   --secondary-foreground: #ffffff;
@@ -62,23 +62,23 @@
   --muted-foreground: #6B7280;
   --accent: #F4F4F4;
   --accent-foreground: #1A1D23;
-  --destructive: #ef4444;
+  --destructive: #38b000;
   --border: #e2e8f0;
   --input: #e2e8f0;
-  --ring: #FF6B00;
-  --chart-1: #FF6B00;
+  --ring: #008000;
+  --chart-1: #008000;
   --chart-2: #1A1D23;
   --chart-3: #6B7280;
   --chart-4: #F4F4F4;
-  --chart-5: #f97316;
+  --chart-5: #38b000;
   --sidebar: #ffffff;
   --sidebar-foreground: #1A1D23;
-  --sidebar-primary: #FF6B00;
+  --sidebar-primary: #008000;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #F4F4F4;
   --sidebar-accent-foreground: #1A1D23;
   --sidebar-border: #e2e8f0;
-  --sidebar-ring: #FF6B00;
+  --sidebar-ring: #008000;
 }
 
 .dark {
@@ -88,7 +88,7 @@
   --card-foreground: #F4F4F4;
   --popover: #1f2329;
   --popover-foreground: #F4F4F4;
-  --primary: #FF6B00;
+  --primary: #008000;
   --primary-foreground: #ffffff;
   --secondary: #374151;
   --secondary-foreground: #ffffff;
@@ -96,29 +96,30 @@
   --muted-foreground: #9ca3af;
   --accent: #374151;
   --accent-foreground: #F4F4F4;
-  --destructive: #ef4444;
+  --destructive: #38b000;
   --border: #374151;
   --input: #374151;
-  --ring: #FF6B00;
-  --chart-1: #FF6B00;
+  --ring: #008000;
+  --chart-1: #008000;
   --chart-2: #374151;
   --chart-3: #9ca3af;
   --chart-4: #4b5563;
   --chart-5: #ea580c;
   --sidebar: #1f2329;
   --sidebar-foreground: #F4F4F4;
-  --sidebar-primary: #FF6B00;
+  --sidebar-primary: #008000;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #374151;
   --sidebar-accent-foreground: #F4F4F4;
   --sidebar-border: #374151;
-  --sidebar-ring: #FF6B00;
+  --sidebar-ring: #008000;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground font-sans;
   }

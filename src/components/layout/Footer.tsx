@@ -4,18 +4,19 @@ import Image from 'next/image';
 import { MapPin, Phone, Mail } from 'lucide-react';
 export function Footer() {
     return (
-        <footer className="bg-[#111620] pt-20 pb-10 text-gray-300">
+        <footer className=" pt-20 pb-10 text-gray-300 border-t-1">
             <div className="container mx-auto px-4 max-w-7xl">
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
 
                     {/* Brand Info */}
                     <div className="col-span-1 md:col-span-3 lg:col-span-2 space-y-6">
-                        <Link href="/" className="flex items-center relative h-10 sm:h-12 w-48 sm:w-64 mb-4">
+                        <Link href="/" className="flex items-center relative h-12 sm:h-14 w-60 sm:w-80 mb-5">
                             <Image
                                 src="/logo2.png"
                                 alt="Bayraktar Forklift Footer Logo"
                                 fill
                                 className="object-contain object-left"
+                                priority // Footer logolarında da hızlı yükleme için eklenebilir
                             />
                         </Link>
                         <p className="max-w-md text-gray-400 leading-relaxed">
