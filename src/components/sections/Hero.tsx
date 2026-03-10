@@ -54,13 +54,10 @@ export function Hero() {
                 />
 
                 {/* Linear: top to bottom, semi-transparent black gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/80 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black/50 mix-blend-multiply" />
 
                 {/* Ensure right side is visible while darkening the left for text readability on larger screens */}
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-transparent" />
 
-                {/* Faint, 5% opacity geometric grid pattern overlay for texture */}
-                <div className="absolute inset-0 opacity-5 pointer-events-none bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:40px_40px]" />
             </div>
 
             {/* Content Container (z-10 ensures it stays above overlays but under Navbar's z-50) */}

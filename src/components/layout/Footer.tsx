@@ -28,7 +28,7 @@ export function Footer() {
                     <div className="space-y-6">
                         <h4 className="text-white font-bold text-lg">Hızlı Menü</h4>
                         <ul className="space-y-4">
-                            <li><Link href="/filomuz" className="text-gray-400 hover:text-primary transition-colors">Forklift Kiralama</Link></li>
+                            <li><Link href="/kiralik-forklift" className="text-gray-400 hover:text-primary transition-colors">Forklift Kiralama</Link></li>
                             <li><Link href="/hakkimizda" className="text-gray-400 hover:text-primary transition-colors">Hakkımızda</Link></li>
                             <li><Link href="/iletisim" className="text-gray-400 hover:text-primary transition-colors">İletişim</Link></li>
                             <li><Link href="/hizmetlerimiz" className="text-gray-400 hover:text-primary transition-colors">Hizmetlerimiz</Link></li>

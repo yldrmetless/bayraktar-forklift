@@ -62,7 +62,7 @@ export function LocationClient({ location, slug }: { location: Location, slug: s
                                 <div className="bg-white rounded-2xl shadow-sm border border-border/50 overflow-hidden flex flex-row md:flex-col overflow-x-auto md:overflow-x-visible no-scrollbar max-h-[700px] overflow-y-auto">
                                     {/* Priority Item */}
                                     <Link
-                                        href="/filomuz"
+                                        href="/kiralik-forklift"
                                         className="bg-[#008000] hover:bg-[#006400] text-[#FFFFFF] font-bold py-2.5 px-3 md:py-4 md:px-6 block w-auto md:w-full text-center md:text-left transition-colors shrink-0 whitespace-nowrap md:whitespace-normal md:rounded-t-[16px] text-sm md:text-base"
                                     >
                                         Nereden Kiralayabilirim?
@@ -122,19 +122,21 @@ export function LocationClient({ location, slug }: { location: Location, slug: s
                                     </div>
 
                                     {/* Neighborhoods (Scroll Area) */}
-                                    <div className="mb-12 flex-1">
-                                        <h3 className="font-extrabold text-[#1A1D23] text-lg mb-4">Hizmet Bölgelerimiz</h3>
-                                        <div className="flex flex-wrap gap-2 max-h-[220px] overflow-y-auto pr-2 custom-scrollbar">
-                                            {location.neighborhoods.map((n: string, i: number) => {
-                                                const cleanName = n.replace(/forklift kiralama/gi, '').trim();
-                                                return (
-                                                    <Badge key={i} variant="outline" className="font-normal text-gray-700 bg-gray-100 hover:bg-gray-200 cursor-default border-none px-3 py-1.5 text-sm transition-colors rounded-lg">
-                                                        {cleanName}
-                                                    </Badge>
-                                                );
-                                            })}
+                                    {location.neighborhoods?.length > 0 && (
+                                        <div className="mb-12 flex-1">
+                                            <h3 className="font-extrabold text-[#1A1D23] text-lg mb-4">Hizmet Bölgelerimiz</h3>
+                                            <div className="flex flex-wrap gap-2 max-h-[220px] overflow-y-auto pr-2 custom-scrollbar">
+                                                {location.neighborhoods.map((n: string, i: number) => {
+                                                    const cleanName = n.replace(/forklift kiralama/gi, '').trim();
+                                                    return (
+                                                        <Badge key={i} variant="outline" className="font-normal text-gray-700 bg-gray-100 hover:bg-gray-200 cursor-default border-none px-3 py-1.5 text-sm transition-colors rounded-lg">
+                                                            {cleanName}
+                                                        </Badge>
+                                                    );
+                                                })}
+                                            </div>
                                         </div>
-                                    </div>
+                                    )}
 
                                     {/* Emergency Contact Box */}
                                     <div className="mt-8 bg-orange-50 rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 border border-orange-100">

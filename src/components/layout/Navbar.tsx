@@ -27,7 +27,7 @@ export function Navbar() {
     const navLinks = [
         { name: 'Ana Sayfa', href: '/' },
         { name: 'Hizmetlerimiz', href: '/hizmetlerimiz' },
-        { name: 'Filomuz', href: '/filomuz' },
+        { name: 'Kiralık Forklift', href: '/kiralik-forklift' },
         { name: 'Hakkımızda', href: '/hakkimizda' },
         { name: 'Galeri', href: '/galeri' },
         { name: 'İletişim', href: '/iletisim' }

@@ -15,7 +15,7 @@ import {
     Map as MapIcon
 } from 'lucide-react';
 
-export default function Filomuz() {
+export default function KiralikForklift() {
 
     return (
         <div className="flex flex-col min-h-screen bg-gray-50/30 relative">

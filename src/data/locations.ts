@@ -28,6 +28,13 @@ export const locations = [
         "neighborhoods": ["Alemdağ", "Aydınlar", "Çamlık", "Çatalmeşe", "Ekşioğlu", "Güngören", "Hamidiye", "Kirazlıdere", "Mehmet Akif", "Merkez", "Mimar Sinan", "Nişantepe", "Ömerli", "Reşadiye", "Sırapınar", "Soğukpınar", "Taşdelen"]
     },
     {
+        "id": "ferhatpasa",
+        "slug": "ferhatpasa-kiralik-forklift",
+        "district": "Ferhatpaşa",
+        "description": "Bayraktar Forklift olarak Ferhatpaşa kiralık forklift ve Ferhatpaşa forklift kiralama hizmetlerimizle lojistik merkezleri ve sanayi bölgeleri için 7/24 acil forklift kiralama hizmeti sunuyoruz. Ferhatpaşa genelinde operatörlü forklift kiralama ihtiyaçlarınıza profesyonel çözümler sağlıyoruz.",
+        "neighborhoods": []
+    },
+    {
         "id": "kadikoy",
         "slug": "kadikoy-kiralik-forklift",
         "district": "Kadıköy",
