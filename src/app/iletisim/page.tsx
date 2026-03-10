@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import React from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { MapPin, Smartphone, Mail, MessageCircle } from 'lucide-react';
+import { MapPin, Smartphone, Mail } from 'lucide-react';
 import * as motion from 'framer-motion/client';
 
 export const metadata: Metadata = {

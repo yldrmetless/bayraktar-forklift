@@ -1,36 +1,21 @@
 "use client";
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { locations } from '@/data/locations';
 import {
-    UserCheck,
     Clock,
-    Calendar,
-    CalendarDays,
-    Zap,
     ShieldCheck,
     UserCog,
     ClipboardCheck,
     Phone,
-    Map
+    Map as MapIcon
 } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
-
-const serviceIcons = [
-    { label: "OPERATÖRLÜ", icon: UserCheck },
-    { label: "SAATLİK", icon: Clock },
-    { label: "GÜNLÜK", icon: Calendar },
-    { label: "AYLIK", icon: CalendarDays },
-    { label: "ACİL", icon: Zap }
-];
 
 export default function Filomuz() {
-    const [activeTabId, setActiveTabId] = useState("service_policy");
-    const [activeDistrictData, setActiveDistrictData] = useState(locations[0]);
 
     return (
         <div className="flex flex-col min-h-screen bg-gray-50/30 relative">
@@ -67,12 +52,11 @@ export default function Filomuz() {
                             <div className="md:w-64 lg:w-72 shrink-0">
                                 <div className="bg-white rounded-2xl shadow-sm border border-border/50 overflow-hidden flex flex-row md:flex-col overflow-x-auto md:overflow-x-visible no-scrollbar max-h-[700px] overflow-y-auto">
                                     {/* Priority Item */}
-                                    <button
-                                        onClick={() => setActiveTabId("service_policy")}
-                                        className="bg-[#008000] hover:bg-[#006400] text-[#FFFFFF] font-bold py-4 px-6 block w-full text-left transition-colors shrink-0 whitespace-nowrap md:whitespace-normal md:rounded-t-[16px]"
+                                    <div
+                                        className="bg-[#008000] text-[#FFFFFF] font-bold py-4 px-6 block w-full text-left shrink-0 whitespace-nowrap md:whitespace-normal md:rounded-t-[16px]"
                                     >
                                         Nereden Kiralayabilirim?
-                                    </button>
+                                    </div>
 
                                     {locations.map((loc) => {
                                         return (
@@ -90,125 +74,61 @@ export default function Filomuz() {
 
                             {/* Main Content Area */}
                             <div className="flex-1 min-w-0">
-                                <AnimatePresence mode="wait">
-                                    {activeTabId === "service_policy" ? (
-                                        <motion.div
-                                            key="service_policy"
-                                            initial={{ opacity: 0, x: 20 }}
-                                            animate={{ opacity: 1, x: 0 }}
-                                            exit={{ opacity: 0, x: -20 }}
-                                            transition={{ duration: 0.3 }}
-                                            className="bg-white rounded-[2rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-border/50 h-full flex flex-col"
-                                        >
-                                            <div className="flex-1">
-                                                <h2 className="text-3xl md:text-4xl font-extrabold text-[#1A1D23] mb-4">
-                                                    KİRALIK FORKLİFT
-                                                    <div className="mt-5 w-16 h-1 bg-primary rounded-full" />
-                                                </h2>
+                                <motion.div
+                                    key="service_policy"
+                                    initial={{ opacity: 0, x: 20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="bg-white rounded-[2rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-border/50 h-full flex flex-col"
+                                >
+                                    <div className="flex-1">
+                                        <h2 className="text-3xl md:text-4xl font-extrabold text-[#1A1D23] mb-4">
+                                            KİRALIK FORKLİFT
+                                            <div className="mt-5 w-16 h-1 bg-primary rounded-full" />
+                                        </h2>
 
-                                                <div className="my-10 text-gray-600 font-medium leading-[1.8] text-lg lg:text-xl space-y-6">
-                                                    <p>
-                                                        Şuanlık sadece istanbul içi servis ağımız ve kiralık forklift hizmetimiz mevcuttur. Her an forklift kiralama hizmetimizden yararlanabilirsiniz.
-                                                    </p>
-                                                    <p>
-                                                        Bunun için bizden telefonla bilgi alabilir ve hemen ulaşabilirsiniz. Telefonumuza saat kaç olursa olsun 7 gün 24 saat telefonla ulaşabilir ve kiralık forklift alabilirsiniz.
-                                                    </p>
+                                        <div className="my-10 text-gray-600 font-medium leading-[1.8] text-lg lg:text-xl space-y-6">
+                                            <p>
+                                                Şuanlık sadece istanbul içi servis ağımız ve kiralık forklift hizmetimiz mevcuttur. Her an forklift kiralama hizmetimizden yararlanabilirsiniz.
+                                            </p>
+                                            <p>
+                                                Bunun için bizden telefonla bilgi alabilir ve hemen ulaşabilirsiniz. Telefonumuza saat kaç olursa olsun 7 gün 24 saat telefonla ulaşabilir ve kiralık forklift alabilirsiniz.
+                                            </p>
+                                        </div>
+
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mt-8 mb-12">
+                                            <div className="flex items-center gap-5 bg-orange-50/50 p-6 rounded-2xl border border-primary/10 hover:border-primary/30 transition-colors">
+                                                <div className="bg-white p-4 rounded-xl shadow-sm text-primary shrink-0">
+                                                    <Clock className="w-8 h-8" />
                                                 </div>
-
-                                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mt-8 mb-12">
-                                                    <div className="flex items-center gap-5 bg-orange-50/50 p-6 rounded-2xl border border-primary/10 hover:border-primary/30 transition-colors">
-                                                        <div className="bg-white p-4 rounded-xl shadow-sm text-primary shrink-0">
-                                                            <Clock className="w-8 h-8" />
-                                                        </div>
-                                                        <div>
-                                                            <h4 className="font-extrabold text-[#1A1D23] text-lg mb-1">7/24 Destek</h4>
-                                                            <p className="text-sm text-gray-500 font-medium">Kesintisiz Hizmet</p>
-                                                        </div>
-                                                    </div>
-                                                    <div className="flex items-center gap-5 bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:border-gray-200 transition-colors">
-                                                        <div className="bg-white p-4 rounded-xl shadow-sm text-primary shrink-0">
-                                                            <Map className="w-8 h-8" />
-                                                        </div>
-                                                        <div>
-                                                            <h4 className="font-extrabold text-[#1A1D23] text-lg mb-1">İstanbul İçi</h4>
-                                                            <p className="text-sm text-gray-500 font-medium">Geniş Servis Ağı</p>
-                                                        </div>
-                                                    </div>
+                                                <div>
+                                                    <h4 className="font-extrabold text-[#1A1D23] text-lg mb-1">7/24 Destek</h4>
+                                                    <p className="text-sm text-gray-500 font-medium">Kesintisiz Hizmet</p>
                                                 </div>
                                             </div>
+                                            <div className="flex items-center gap-5 bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:border-gray-200 transition-colors">
+                                                <div className="bg-white p-4 rounded-xl shadow-sm text-primary shrink-0">
+                                                    <MapIcon className="w-8 h-8" />
+                                                </div>
+                                                <div>
+                                                    <h4 className="font-extrabold text-[#1A1D23] text-lg mb-1">İstanbul İçi</h4>
+                                                    <p className="text-sm text-gray-500 font-medium">Geniş Servis Ağı</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                            {/* Emergency Contact Box */}
-                                            <div className="mt-auto bg-orange-50 rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 border border-orange-100">
-                                                <div className="text-center sm:text-left">
-                                                    <h4 className="font-extrabold text-[#1A1D23] text-lg lg:text-xl mb-1">Kiralık Forklift Hattı - 0538 514 74 74</h4>
-                                                    <p className="text-primary text-sm font-medium">Hemen arayın, 30 dakikada sahada olalım.</p>
-                                                </div>
-                                                <div className="text-2xl lg:text-3xl font-black text-primary shrink-0 hidden md:block">
-                                                    0538 514 74 74
-                                                </div>
-                                            </div>
-                                        </motion.div>
-                                    ) : (
-                                        <motion.div
-                                            key={activeDistrictData.district}
-                                            initial={{ opacity: 0, x: 20 }}
-                                            animate={{ opacity: 1, x: 0 }}
-                                            exit={{ opacity: 0, x: -20 }}
-                                            transition={{ duration: 0.3 }}
-                                            className="bg-white rounded-[2rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-border/50 h-full flex flex-col"
-                                        >
-                                            {/* Header */}
-                                            <div className="mb-10">
-                                                <h2 className="text-3xl font-extrabold text-[#1A1D23] mb-4">
-                                                    {activeDistrictData.district} Kiralık Forklift
-                                                    <div className="mt-4 w-16 h-1 bg-primary rounded-full" />
-                                                </h2>
-                                                <p className="text-gray-500 font-medium leading-relaxed">
-                                                    {activeDistrictData.description}
-                                                </p>
-                                            </div>
-
-                                            {/* Service Icons Grid */}
-                                            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
-                                                {serviceIcons.map((service, idx) => {
-                                                    const Icon = service.icon;
-                                                    return (
-                                                        <div key={idx} className="flex flex-col items-center justify-center p-4 border border-border/60 rounded-xl hover:border-primary/30 hover:bg-orange-50 transition-colors group">
-                                                            <Icon className="w-6 h-6 text-primary mb-3 group-hover:scale-110 transition-transform" />
-                                                            <span className="text-xs font-bold text-[#1A1D23] tracking-wider">{service.label}</span>
-                                                        </div>
-                                                    );
-                                                })}
-                                            </div>
-
-                                            {/* Neighborhoods (Scroll Area) */}
-                                            <div className="mb-12 flex-1">
-                                                <h3 className="font-extrabold text-[#1A1D23] text-lg mb-4">Hizmet Bölgelerimiz</h3>
-                                                <div className="flex flex-wrap gap-2 max-h-[220px] overflow-y-auto pr-2 custom-scrollbar">
-                                                    {activeDistrictData.neighborhoods.map((n, i) => {
-                                                        const cleanName = n.replace(/forklift kiralama/gi, '').trim();
-                                                        return (
-                                                            <Badge key={i} variant="outline" className="font-normal text-gray-700 bg-gray-100 hover:bg-gray-200 cursor-default border-none px-3 py-1.5 text-sm transition-colors rounded-lg">
-                                                                {cleanName}
-                                                            </Badge>
-                                                        );
-                                                    })}
-                                                </div>
-                                            </div>
-
-                                            {/* Emergency Contact Box */}
-                                            <div className="mt-8 bg-orange-50 rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 border border-orange-100">
-                                                <div className="text-center sm:text-left">
-                                                    <h4 className="font-extrabold text-[#1A1D23] text-lg lg:text-xl mb-1">Kiralık Forklift Hattı - 0538 514 74 74</h4>
-                                                    <p className="text-primary text-sm font-medium">Hemen arayın, 30 dakikada sahada olalım.</p>
-                                                </div>
-                                                <div className="text-2xl lg:text-3xl font-black text-primary shrink-0 hidden md:block">
-                                                    0538 514 74 74
-                                                </div>
-                                            </div>
-                                        </motion.div>
-                                    )}
-                                </AnimatePresence>
+                                    {/* Emergency Contact Box */}
+                                    <div className="mt-auto bg-orange-50 rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 border border-orange-100">
+                                        <div className="text-center sm:text-left">
+                                            <h4 className="font-extrabold text-[#1A1D23] text-lg lg:text-xl mb-1">Kiralık Forklift Hattı - 0538 514 74 74</h4>
+                                            <p className="text-primary text-sm font-medium">Hemen arayın, 30 dakikada sahada olalım.</p>
+                                        </div>
+                                        <div className="text-2xl lg:text-3xl font-black text-primary shrink-0 hidden md:block">
+                                            0538 514 74 74
+                                        </div>
+                                    </div>
+                                </motion.div>
                             </div>
 
                         </div>

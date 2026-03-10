@@ -6,8 +6,16 @@ import Link from 'next/link';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { locations } from '@/data/locations';
-import { UserCheck, Clock, Calendar, CalendarDays, Zap, ShieldCheck, UserCog, ClipboardCheck, Phone, Map } from 'lucide-react';
+import { UserCheck, Clock, Calendar, CalendarDays, Zap, ShieldCheck, UserCog, ClipboardCheck, Phone } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
+
+interface Location {
+    id: string;
+    slug: string;
+    district: string;
+    description: string;
+    neighborhoods: string[];
+}
 
 const serviceIcons = [
     { label: "OPERATÖRLÜ", icon: UserCheck },
@@ -17,7 +25,7 @@ const serviceIcons = [
     { label: "ACİL", icon: Zap }
 ];
 
-export function LocationClient({ location, slug }: { location: any, slug: string }) {
+export function LocationClient({ location, slug }: { location: Location, slug: string }) {
     return (
         <div className="flex flex-col min-h-screen bg-gray-50/30 relative">
             <Navbar />
