@@ -3,7 +3,7 @@ export const locations = [
         "id": "atasehir",
         "slug": "atasehir-kiralik-forklift",
         "district": "Ataşehir",
-        "name": "Ataşehir Finans Merkezi Kiralık Forklift | Bayraktar Forklift",
+        "name": "Ataşehir Kiralık Forklift | Bayraktar Forklift",
         "description": "Bayraktar Forklift olarak Ataşehir kiralık forklift ve Ataşehir forklift kiralama hizmetlerimiz ile depo, şantiye ve işletmeler için 7/24 acil forklift kiralama Ataşehir hizmeti sunuyoruz. Ataşehir genelinde acil kiralık forklift, operatörlü forklift kiralama ve 3 tonluk forklift kiralama ihtiyaçlarınıza en hızlı çözümleri sağlamaktayız.",
         "neighborhoods": ["Aşıkveysel", "Atatürk", "Barbaros", "Esatpaşa", "Ferhatpaşa", "İçerenköy", "İnönü", "Kayışdağı", "Küçükbakkalköy", "Mevlana", "Mimar Sinan", "Mustafa Kemal", "Örnek", "Yeniçamlıca", "Yenişehir"]
     },
