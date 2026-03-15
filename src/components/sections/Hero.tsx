@@ -71,12 +71,12 @@ export function Hero() {
                 >
                     {/* Main Headline */}
                     <motion.h1
-                        className="font-sans text-[2.5rem] leading-[1.05] md:text-6xl lg:text-7xl xl:text-[5rem] font-black uppercase tracking-tight text-white drop-shadow-md"
+                        className="font-sans text-[2.5rem] leading-[1.05] md:text-6xl lg:text-6xl xl:text-[4rem] font-black uppercase tracking-tight text-white drop-shadow-md"
                         variants={itemVariants}
                     >
-                        <span className="text-white">BAYRAKTAR:</span> <br className="hidden md:block" />
-                        <span className="text-[#00A651]">HIZLI VE GÜVENİLİR</span> <br className="hidden md:block lg:hidden" />
-                        <span className="text-white"> FORKLİFT KİRALAMA</span>
+                        <span className="text-white">FORKLİFT HİZMETLERİNDE</span> <br className="hidden md:block" />
+                        <span className="text-[#00A651]">AKILCI VE GÜVENİLİR</span> <br className="hidden md:block lg:hidden" />
+                        <span className="text-white"> ÇÖZÜMLER</span>
                     </motion.h1>
 
                     {/* Subtext */}

@@ -35,7 +35,7 @@ export function Navbar() {
 
     return (
         <nav className="sticky top-0 z-50 w-full bg-white border-b border-border/40 shadow-sm">
-            <div className="container mx-auto px-4 h-20 flex items-center justify-between lg:grid lg:grid-cols-[1fr_auto_1fr]">
+            <div className="container mx-auto px-4 h-24 flex items-center justify-between lg:grid lg:grid-cols-[1fr_auto_1fr]">
 
                 {/* Logo */}
                 <div className="flex items-center gap-1 z-50 lg:justify-self-start">
@@ -44,7 +44,7 @@ export function Navbar() {
                         className="flex items-center"
                         onClick={() => setIsOpen(false)}
                     >
-                        <div className="relative h-[55px] w-[260px] sm:h-[75px] sm:w-[320px]">
+                        <div className="relative h-[66px] w-[312px] sm:h-[90px] sm:w-[384px]">
                             <Image
                                 src="/logo.png"
                                 alt="Bayraktar Forklift Logo"

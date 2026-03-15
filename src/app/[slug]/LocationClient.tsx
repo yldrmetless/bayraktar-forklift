@@ -11,6 +11,7 @@ import { Badge } from '@/components/ui/badge';
 
 interface Location {
     id: string;
+    name: string;
     slug: string;
     district: string;
     description: string;
@@ -99,8 +100,8 @@ export function LocationClient({ location, slug }: { location: Location, slug: s
                                 >
                                     {/* Header */}
                                     <div className="mb-10">
-                                        <h2 className="text-3xl font-extrabold text-[#1A1D23] mb-4">
-                                            {location.district} Kiralık Forklift
+                                        <h2 className="text-[1.25rem] font-extrabold text-[#1A1D23] mb-4">
+                                            {location.name}
                                             <div className="mt-4 w-16 h-1 bg-primary rounded-full" />
                                         </h2>
                                         <p className="text-gray-500 font-medium leading-relaxed">

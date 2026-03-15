@@ -10,9 +10,9 @@ export function Footer() {
 
                     {/* Brand Info */}
                     <div className="col-span-1 md:col-span-3 lg:col-span-2 space-y-6">
-                        <Link href="/" className="flex items-center relative h-12 sm:h-14 w-60 sm:w-80 mb-5">
+                        <Link href="/" className="flex items-center relative h-12 sm:h-20 w-60 sm:w-96 mb-5">
                             <Image
-                                src="/logo2.png"
+                                src="/logo.png"
                                 alt="Bayraktar Forklift Footer Logo"
                                 fill
                                 className="object-contain object-left"

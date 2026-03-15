@@ -10,9 +10,6 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
 const serviceRegions = [
-    { region: "Avrupa Yakası 1", districts: ["Arnavutköy", "Avcılar", "Bağcılar", "Bahçelievler", "Bakırköy"] },
-    { region: "Avrupa Yakası 2", districts: ["Başakşehir", "Bayrampaşa", "Beşiktaş", "Beylikdüzü", "Beyoğlu"] },
-    { region: "Avrupa Yakası 3", districts: ["Büyükçekmece", "Çatalca", "Esenler", "Esenyurt", "Eyüpsultan"] },
     { region: "Anadolu Yakası 1", districts: ["Ataşehir", "Beykoz", "Çekmeköy", "Kadıköy", "Kartal"] },
     { region: "Anadolu Yakası 2", districts: ["Maltepe", "Pendik", "Sancaktepe", "Tuzla", "Ümraniye"] }
 ];
@@ -123,17 +120,17 @@ export default function Hakkimizda() {
 
                         {/* Regions Grid */}
                         <motion.div
-                            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6"
+                            className="flex flex-wrap justify-center gap-6"
                             variants={containerVariants}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, margin: "-50px" }}
                         >
                             {serviceRegions.map((regionGroup, idx) => (
-                                <motion.div key={idx} variants={itemVariants}>
+                                <motion.div key={idx} variants={itemVariants} className="w-full max-w-sm sm:w-[260px] sm:max-w-none">
                                     <Card className="h-full bg-white border-none shadow-sm hover:shadow-md transition-shadow p-6 rounded-2xl">
                                         <div className="flex items-center gap-2 mb-6 border-b border-border/50 pb-4">
-                                            <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
+                                            <MapPin className="w-5 h-5 text-primary shrink-0" />
                                             <h3 className="font-bold text-[#1A1D23] text-sm">{regionGroup.region}</h3>
                                         </div>
                                         <ul className="space-y-3">
